@@ -1,26 +1,7 @@
 """
 Gia James & Shinny No
-Final Project for CPTR 215
+Final Project for CPTR 215 Fundamentals of Software Design
 Water Intake Tracker
-
-2024-12-08 structure of app
-2024-12-09 added lineedit for inputting water amount, added date feature to pick day;
-           new logs have time, amount, and units user entered & picked; added units for goal;
-           a save log thing, doesn't do persistence yet
-2024-12-10 conversion function, added line chart (not dynamic), added persistence 
-           TODO: set correct X and Y axis
-           TODO: QUESTION : how to make a chart for "yearly"
-           TODO: doctests
-2024-12-11 added functionality for set_goal button
-2024-12-12 filtered lists now work as expected meaning the user will only see logs that we inputted on the specific day that they picked. when they close the
-           app and open it up again, the app will have persistence and save all the user's inputted logs; added descriptions to functions; 
-           can and is calculating the % of water goal met with each addition of a water log, and switching between days
-           TODO: remove specific logs!! make button to do that, should call save_logs after removing a log so it saves to txt file
-           TODO: edit logs? 
-2024-12-13 pie chart showing up
-2024-12-15 pie chart 1 updates
-           TODO: added functionality to pie chart 2 & add on to update_pie_chart
-
 
 
 references:
