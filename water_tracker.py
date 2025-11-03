@@ -21,8 +21,6 @@ references:
     documentation about currentrow() in python/qt: https://doc.qt.io/qtforpython-6/PySide6/QtWidgets/QListWidget.
     
 BUGGS:
-    - Unable to remove logs before a log is entered in on one of the dates, after the first log has been entered all logs after that are able to be
-    removed though. 
     - Unable to hit enter instead of the checkmark button for the set daily goal
     - Able to enter an invalid input to the daily logs, it doesnt save, but until the user closes and opens the app again they will be
     able to see the invalid input that is showing up in the logs 
@@ -76,13 +74,13 @@ class H2OGrowApp(QMainWindow):
 
         # main layout for the app
         main_layout = QVBoxLayout(central_widget)
-        central_widget.setStyleSheet("background-color: #dfe3db;")  # Background color
+        central_widget.setStyleSheet("background-color: #dfe3db;") 
 
         # header section of the layout
         title_label = QLabel("H2O Grow")
         title_label.setFont(QFont("Arial", 28, QFont.Weight.Bold))
         title_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        title_label.setStyleSheet("color: #316047;")  # Dark green
+        title_label.setStyleSheet("color: #316047;") 
         main_layout.addWidget(title_label)
 
         # top section of the layout
@@ -876,3 +874,4 @@ if __name__ == "__main__":
     window.show()
 
     sys.exit(app.exec())
+
